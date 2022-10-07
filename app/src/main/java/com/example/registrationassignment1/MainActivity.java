@@ -34,13 +34,18 @@ public class MainActivity extends AppCompatActivity {
                 String name1 = name.getText().toString();
                 String birthdate1 = birth_date.getText().toString();
                 String email1 = email.getText().toString();
-                        Intent intent = new Intent(MainActivity.this,Dashboard.class );
-                        intent.putExtra("keyname",name1);
-                        intent.putExtra("keybirthdate",birthdate1);
-                        intent.putExtra("keyemail",email1);
-                        startActivity(intent);
+                if(name1.equals("")||birthdate1.equals("")||email1.equals("")){
+                    Toast.makeText(MainActivity.this,"Please fill out all required fields",Toast.LENGTH_SHORT).show();
 
-
+                }
+                else{
+                    db.insertData(name1, birthdate1, email1);
+                    Intent intent = new Intent(MainActivity.this, Dashboard.class);
+                    intent.putExtra("keyname", name1);
+                    intent.putExtra("keybirthdate", birthdate1);
+                    intent.putExtra("keyemail", email1);
+                    startActivity(intent);
+                }
 
             }
         });
