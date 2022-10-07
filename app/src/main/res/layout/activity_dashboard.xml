@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="Registration Successful"
+        android:text="@string/registration_successful"
         android:textColor="@color/black"
         android:textSize="33sp"
         android:textStyle="bold" />
@@ -23,9 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="Your Details are submitted Successfully !"
-        android:textColor="#807A7A"
+        android:layout_marginTop="16dp"
+        android:text="@string/your_details_are_submitted_successfully"
+        android:textColor="#5A5656"
         android:textSize="15sp"
         android:textStyle="bold" />
 
@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Name"
+                android:text="@string/name"
                 android:textColor="@color/white"
 
                 />
@@ -51,14 +51,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Birth Date"
+                android:text="@string/birth_date"
                 android:textColor="@color/white"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Email Id"
+                android:text="@string/email_id"
                 android:textColor="@color/white"
                 />
         </TableRow>
@@ -67,19 +67,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="name1"
+                android:text="@string/name1"
                 android:id="@+id/text_name"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="birthdate1"
+                android:text="@string/birthdate1"
                 android:id="@+id/text_date"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="email_id1"
+                android:text="@string/email_id1"
                 android:id="@+id/text_email"/>
         </TableRow>
     </TableLayout>
